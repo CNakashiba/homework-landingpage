@@ -1,0 +1,56 @@
+Relaxr Landing Page: Part 1
+==================
+
+We'll be working on this site for the next three classes, just a heads up.
+
+For today, we'll be making a simplified version of the site which uses only one column. Your job is to build out the CSS - using the information below - for the page!
+
+
+****FONT COLORS****
+
+— Major Components —
+
+Footer background gray: rgb(242,244,246)
+
+page background white: #ffffff
+
+— Buttons —
+
+green rgb(16,204,114)
+
+blue rgb(115,176,248)
+
+— Font colors —
+
+Logo in header - #FFF
+Body copy (almost black) - #033048
+Body copy (light gray) - rgb(142,149,146)
+Logo in footer - rgb(113,122,128)
+Copyright copy
+
+
+****FONT WEIGHTS & SIZES****
+
+Font: Roboto
+Weight: Light, Light Italic, Regular, Medium, Bold, Black
+
+
+"Relaxr" (logo/primary level heading) - Black, 40px
+
+"Get piece of mind with a single tap" (secondary level heading) - Black, 36px
+
+"Get it Now" (call to action button) - Black, 14px, 5px border radius
+
+Paragraph headings (tertiary level heading) - Bold, 20px
+
+Paragraph text - Light, 14px (main paragraph text)
+
+"Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work." - Light Italic, 18px (quote)
+
+“ - Amanda, Intuit” - medium, 14px (citation)
+
+"Sign Up Now!" - black, 14px, 5px border radius (call to action button)
+
+Relaxr logo - black, 40px (footer logo)
+
+"Copyright 2017. Relaxr." - bold, 9px (copyright tag)
