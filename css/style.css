@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Relaxr Landing Page
+Client: Relaxr
+Author: Christine Nakashiba
+Developer @GA in LA
 */
 
 
@@ -18,13 +18,16 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-
+	margin: 50px;
 }
 
 a {
   text-decoration: none;
 }
 
+header {
+	/*background-image: "images/bg.jpg";*/
+}
 
 /******************************************
 /* LAYOUT
@@ -34,3 +37,21 @@ a {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.button {
+	width: 150px;
+	display: inline-block;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.primary {
+	background-color: green;
+}
+
+.secondary {
+	background-color: blue;
+}
