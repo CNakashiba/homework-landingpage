@@ -17,28 +17,115 @@ Developer @GA in LA
 /* BASE STYLES
 /*******************************************/
 
-body {
-	margin: 50px;
+header {
+	height: 300px;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	display: flex;
+	align-items: left;
+	flex-direction: column; 
+	padding: 50px;
+}
+
+section {
+	background-color: #fffff;
+	display: flex;
+	margin: 10px;
+}
+
+aside {
+	background-color: #fffff;
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	margin: 10px;
+}
+
+footer {
+	background-color: rgb(242,244,246);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+	color: #fff;
+	font-family: 'roboto', black;
+	font-size: 40px;
+}
+
+h2 {
+	color: rgb(16,204,114);
+	font-family: 'roboto', black;
+	font-size: 36;
+}
+
+h3 {
+	color: #033048;
+	font-family: 'roboto', bold;
+	font-size: 20px;
+}
+
+div.offer1, div.offer2, div.offer3 {
+	flex: 1;
+	text-align: center;
+	margin: 10px;
 }
 
 a {
   text-decoration: none;
 }
 
-header {
-	/*background-image: "images/bg.jpg";*/
+p { 
+	color: rgb(142, 149, 146);
+	font-family: 'roboto', light;
+	font-size: 14px;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+div.quote {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+blockquote {
+	font-family: 'roboto', light;
+	font-style: italic;
+	font-size: 18px;
+	width: 60%;
+}
+
+cite { 
+	font-family: 'roboto', medium;
+	font-size: 14px;
+	margin: 0 0 50px 0;
+}
+
+h4 {
+	color: rgb(113,122,128);
+	font-family: 'roboto', black;
+	font-size: 40px;
+	margin: none;
+}
+
+small {
+	font-family: bold;
+	font-size: 9px;
+	margin: 0 0 20px 0;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 .button {
 	width: 150px;
+	height: 35px;
 	display: inline-block;
 	border-radius: 5px;
 	color: white;
@@ -46,12 +133,14 @@ header {
 	text-align: center;
 	font-weight: bold;
 	text-decoration: none;
+	font-family: 'roboto', black;
+	font-size: 14px;
 }
 
 .primary {
-	background-color: green;
+	background-color: rgb(16,204,114);
 }
 
 .secondary {
-	background-color: blue;
+	background-color: rgb(115,176,248);
 }
