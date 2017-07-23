@@ -55,35 +55,39 @@ footer {
 /*******************************************/
 h1 {
 	color: #fff;
-	font-family: 'roboto', black;
+	font-family: 'roboto';
+	font-weight: 900;
 	font-size: 40px;
 }
 
 h2 {
 	color: rgb(16,204,114);
-	font-family: 'roboto', black;
+	font-family: 'roboto';
+	font-weight: 900;
 	font-size: 36;
 }
 
 h3 {
 	color: #033048;
-	font-family: 'roboto', bold;
+	font-family: 'roboto';
+	font-weight: 700;
 	font-size: 20px;
 }
 
-div.offer1, div.offer2, div.offer3 {
+div#offer1, div#offer2, div#offer3 {
 	flex: 1;
 	text-align: center;
 	margin: 10px;
 }
 
 a {
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 p { 
 	color: rgb(142, 149, 146);
-	font-family: 'roboto', light;
+	font-family: 'roboto';
+	font-weight: 300;
 	font-size: 14px;
 }
 
@@ -95,7 +99,8 @@ div.quote {
 }
 
 blockquote {
-	font-family: 'roboto', light;
+	font-family: 'roboto';
+	font-weight: 300;
 	font-style: italic;
 	font-size: 18px;
 	width: 60%;
@@ -109,13 +114,15 @@ cite {
 
 h4 {
 	color: rgb(113,122,128);
-	font-family: 'roboto', black;
+	font-family: 'roboto';
+	font-weight: 900;
 	font-size: 40px;
 	margin: none;
 }
 
 small {
-	font-family: bold;
+	font-family: 'roboto';
+	font-weight: 700;
 	font-size: 9px;
 	margin: 0 0 20px 0;
 }
@@ -131,7 +138,8 @@ small {
 	color: white;
 	padding: 10px;
 	text-align: center;
-	font-weight: bold;
+	font-family: 'roboto';
+	font-weight: 700;
 	text-decoration: none;
 	font-family: 'roboto', black;
 	font-size: 14px;
