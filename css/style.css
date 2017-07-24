@@ -13,12 +13,22 @@ Developer @GA in LA
   box-sizing: border-box; /* allows us to tell the browser how to measure our elements.  Now the width property includes content, padding, and border, instead of just the content*/
 }
 
+body#blog {
+	display: grid;
+	/*grid-gap: 10px; */
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 200px 1000px 183px;
+	grid-template-areas:"a a a"
+						"b c d"
+						"e e e"
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 header {
-	height: 300px;
+	height: 400px;
 	background-image: url("../images/bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -27,6 +37,29 @@ header {
 	align-items: left;
 	flex-direction: column; 
 	padding: 50px;
+}
+
+header#blogHeader {
+	grid-area: a;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+aside#sideNav {
+	grid-area: b;
+	border: 1px solid black;
+}
+
+section#blogArticles {
+	grid-area: c;
+	border: 1px solid black;
+}
+
+aside#partners {
+	grid-area: d;
+	border: 1px solid black;
 }
 
 section {
@@ -44,11 +77,13 @@ aside {
 }
 
 footer {
+	grid-area: e;
 	background-color: rgb(242,244,246);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 
 /******************************************
 /* LAYOUT
