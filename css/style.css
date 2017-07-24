@@ -1,5 +1,5 @@
 /*
-Project Relaxr Landing Page
+Project Relaxr Landing Page & Blog
 Client: Relaxr
 Author: Christine Nakashiba
 Developer @GA in LA
@@ -45,6 +45,24 @@ header#blogHeader {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+}
+
+header a {
+	color: white;
+}
+
+ul {
+	display: flex;
+	/*height: 100%;*/
+	/*margin:0;*/
+	padding-left: 0px;
+	list-style-type:none;
+}
+
+li {
+	flex: 1;
+	margin: 0 20px;
 }
 
 aside#sideNav {
