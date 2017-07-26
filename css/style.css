@@ -15,9 +15,9 @@ Developer @GA in LA
 
 body#blog {
 	display: grid;
-	/*grid-gap: 10px; */
-	grid-template-columns: 20% 60% 20%;
-	grid-template-rows: 200px 1000px 183px;
+	grid-template-columns: 20% 55% 25%;
+	grid-template-rows: 10% 80% 10%;
+	/*grid-template-rows: .1 .8 .1;*/
 	grid-template-areas:"a a a"
 						"b c d"
 						"e e e"
@@ -48,36 +48,24 @@ header#blogHeader {
 	align-items: center;
 }
 
-header a {
-	color: white;
-}
-
-ul {
-	display: flex;
-	/*height: 100%;*/
-	/*margin:0;*/
-	padding-left: 0px;
-	list-style-type:none;
-}
-
-li {
-	flex: 1;
-	margin: 0 20px;
-}
-
 aside#sideNav {
 	grid-area: b;
-	border: 1px solid black;
+	padding-top: 10px;	
+	display: flex;
 }
 
 section#blogArticles {
 	grid-area: c;
-	border: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	display: flex;
+	flex-direction: column;
 }
 
 aside#partners {
 	grid-area: d;
-	border: 1px solid black;
+	padding-top: 10px;
+	display: flex;
 }
 
 section {
@@ -90,8 +78,9 @@ aside {
 	background-color: #fffff;
 	display: flex;
 	flex-direction: column;	
-	align-items: center;
+	align-items: left;
 	margin: 10px;
+	padding-left: 15px;
 }
 
 footer {
@@ -120,49 +109,15 @@ h2 {
 	font-size: 36;
 }
 
+h2.blogHeader {
+	color: #033048;
+}
+
 h3 {
 	color: #033048;
 	font-family: 'roboto';
 	font-weight: 700;
 	font-size: 20px;
-}
-
-div#offer1, div#offer2, div#offer3 {
-	flex: 1;
-	text-align: center;
-	margin: 10px;
-}
-
-a {
-  	text-decoration: none;
-}
-
-p { 
-	color: rgb(142, 149, 146);
-	font-family: 'roboto';
-	font-weight: 300;
-	font-size: 14px;
-}
-
-div.quote {
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-blockquote {
-	font-family: 'roboto';
-	font-weight: 300;
-	font-style: italic;
-	font-size: 18px;
-	width: 60%;
-}
-
-cite { 
-	font-family: 'roboto', medium;
-	font-size: 14px;
-	margin: 0 0 50px 0;
 }
 
 h4 {
@@ -178,6 +133,85 @@ small {
 	font-weight: 700;
 	font-size: 9px;
 	margin: 0 0 20px 0;
+}
+
+ul {
+	display: flex;
+	padding-left: 0px;
+	list-style-type:none;
+}
+
+li {
+	flex: 1;
+	margin: 0 20px;
+	font-size: 14px;
+}
+
+a {
+  	text-decoration: none;
+}
+
+a.categories, a.latestPosts {
+  	color: rgb(142, 149, 146);
+	font-family: 'roboto';
+	font-weight: 300;	
+	font-size: 14px;
+}
+
+a.categories:hover, a.latestPosts:hover {
+	color: blue;
+}
+
+header a {
+	color: white;
+}
+
+div#offer1, div#offer2, div#offer3 {
+	flex: 1;
+	text-align: center;
+	margin: 10px;
+}
+
+article.blogPost {
+	margin-bottom: 10px;
+}
+
+p { 
+	color: rgb(142, 149, 146);
+	font-family: 'roboto';
+	font-weight: 300;
+	font-size: 14px;
+}
+
+p.blogContent {
+	color: #033048;
+}
+
+div.quote {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+blockquote {
+	font-family: 'roboto';
+	font-weight: 300;
+	font-style: italic;
+	font-size: 18px;
+	width: 60%;
+	color: #033048;
+}
+
+cite { 
+	font-family: 'roboto', medium;
+	font-size: 14px;
+	margin: 0 0 50px 0;
+	color: rgb(142, 149, 146);
+}
+
+cite.quoteCredit {
+	color: #033048;
 }
 
 /******************************************
@@ -206,6 +240,11 @@ small {
 	background-color: rgb(115,176,248);
 }
 
+.articleImages {
+	width: 100%;
+}
+
 .partnersImages {
-	width: 200px;
+	width: 100%;
+	margin: 10px 0;
 }
