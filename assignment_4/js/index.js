@@ -12,7 +12,7 @@
 // If a user clicks "Read Less" on the second post:
 	// Have the <p> (with id="second-read-more-text") slide up and hide the "Read Less" link using $.slideUp() and $.hide()
 	// Show the relevant "Read More" link using $.show()
-		
+
 $(document).ready(function(){
 	$("#first-read-more-text, #second-read-more-text").hide();
 	$(".read-less").hide();
@@ -26,6 +26,10 @@ $(document).ready(function(){
 		event.preventDefault();
 	}
 	
+	// $('#first-read-more-button').click(function ()) {
+	// 	$(this).html("#first-read-less-button", ".show", "#first-read-more-text", .slideDown());
+	// }
+
 	function readMoreOne() {
 		$("#first-read-less-button").show();
 		$("#first-read-more-text").slideDown();
