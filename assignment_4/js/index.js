@@ -22,33 +22,37 @@ $(document).ready(function(){
 	$("#second-read-more-button").click(readMoreTwo);
 	$("#second-read-less-button").click(readLessTwo);
 
-	function preventMovement(){
-		event.preventDefault();
-	}
+	// function preventMovement(){
+	// 	event.preventDefault();
+	// }
 	
 	// $('#first-read-more-button').click(function ()) {
 	// 	$(this).html("#first-read-less-button", ".show", "#first-read-more-text", .slideDown());
 	// }
 
 	function readMoreOne() {
+		event.preventDefault();			
 		$("#first-read-less-button").show();
 		$("#first-read-more-text").slideDown();
 		$("#first-read-more-button").hide();
 	}
 
 	function readLessOne() {
+		event.preventDefault();		
 		$("#first-read-more-button").show();
 		$("#first-read-more-text").slideUp();
 		$("#first-read-less-button").hide();
 	}
 
 	function readMoreTwo() {
+		event.preventDefault();
 		$("#second-read-less-button").show();
 		$("#second-read-more-text").slideDown();
 		$("#second-read-more-button").hide();
 	}
 
 	function readLessTwo() {
+		event.preventDefault();
 		$("#second-read-more-button").show();
 		$("#second-read-more-text").slideUp();
 		$("#second-read-less-button").hide();
